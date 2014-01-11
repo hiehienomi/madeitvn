@@ -1,0 +1,132 @@
+extends ../layout/frontend
+block layout_left
+    include ../include/left_user
+block content
+    .clear.height10
+    .madeit_form
+        span.block.grid_3 Họ và tên
+        span.float_left.block Trần Thị Minh Trâm
+        .clear.height10
+        span.block.grid_3 Giới tính
+        span.float_left.block Nữ
+        .clear.height10
+        span.block.grid_3 Quốc tịch
+        span.float_left.block Việt Nam
+        .clear.height10
+        span.block.grid_3 Ngày sinh
+        span.float_left.block 3/3/1990
+        .clear.height10
+        span.block.grid_3 Địa chỉ
+        span.float_left.block Q5 TPHCM
+        .clear.height10
+        span.block.grid_3 Email
+        span.float_left.block Hishita@gmail.com
+        .clear.height10
+        span.block.grid_3 Ngành nghề
+        span.float_left.block Sinh viên
+        .clear.height10
+        button.blue_btn.form_btn Thay đổi thông tin cá nhân
+        .clear
+    .grid_8.alpha.margin_top_20
+        h3 Sản phẩm yêu thích
+        .margin_top_10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            a.float_left.block.margin_right_10.last_child(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .clear.height10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            a.float_left.block.margin_right_10.last_child(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .clear.height10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            a.float_left.block.margin_right_10.last_child(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .clear.height10
+            div(style='width: 257px')
+                a.float_right.link(href='') Xem tất cả
+            .clear.height10
+    .grid_9.omega.margin_top_20
+        h3 Đánh giá sản phẩm
+        .margin_top_10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .float_left(style='width: 260px')
+                p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            .clear.height10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .float_left(style='width: 260px')
+                p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            .clear.height10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .float_left(style='width: 260px')
+                p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            .clear.height10
+            a.float_right.link(href='') Xem tất cả
+            .clear.height10
+    .clear
+    .grid_8.alpha.margin_top_20
+        h3 Gian hàng yêu thích
+        .margin_top_10
+            .pink_color(style='font-size: 18px') Lolie Florie
+            .clear.margin_top_10
+            a.float_left.margin_right_10.block(href='')
+                img.border_radius_5(width='80', height='80', src='/images/product_thumb.jpg')
+            a.float_left.margin_right_10.block(href='')
+                img.border_radius_5(width='80', height='80', src='/images/product_thumb.jpg')
+            a.border_radius_5.last_child.float_left.margin_right_10(style='background: #CCC; width: 80px; height: 80px; line-height: 80px; text-align: center', href='')
+                | + 30
+            .clear(style='height: 15px;')
+            .pink_color(style='font-size: 18px') Lolie Florie
+            .clear.margin_top_10
+            a.float_left.margin_right_10.block(href='')
+                img.border_radius_5(width='80', height='80', src='/images/product_thumb.jpg')
+            a.float_left.margin_right_10.block(href='')
+                img.border_radius_5(width='80', height='80', src='/images/product_thumb.jpg')
+            a.border_radius_5.last_child.float_left.margin_right_10(style='background: #CCC; width: 80px; height: 80px; line-height: 80px; text-align: center', href='')
+                | + 30
+            .clear(style='height: 15px;')
+            div(style='width: 257px')
+                a.float_right.link(href='') Xem tất cả
+    .grid_9.omega.margin_top_20
+        h3 Đánh giá gian hàng
+        .margin_top_10
+            .pink_color(style='font-size: 18px') Lolie Florie
+            .clear.margin_top_10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .float_left(style='width: 260px')
+                p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            .clear.height10
+            .pink_color(style='font-size: 18px') Lolie Florie
+            .clear.margin_top_10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .float_left(style='width: 260px')
+                p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            .clear.height10
+            .pink_color(style='font-size: 18px') Lolie Florie
+            .clear.margin_top_10
+            a.float_left.block.margin_right_10(href='')
+                img.border_radius_5(width='80', height='63', src='/images/new_sp1.jpg')
+            .float_left(style='width: 260px')
+                p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            .clear.height10
+            a.float_right.link(href='') Xem tất cả
+            .clear.height10

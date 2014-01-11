@@ -1,0 +1,122 @@
+extends ../layout/frontend
+block layout_left
+  include ../include/index_left
+block content
+    .top_banner(style='padding: 0;')
+    .big_title Đăng Ký Tài Khoản
+    ul#reg_login_tab.idTabs.margin_top_10.reviewTab
+      li.float_left.margin_right_10
+        a.border_radius_5.selected(href='/users/new') Đăng ký
+      li.float_left.margin_right_10
+        a.border_radius_5(href='/users/login') Đăng nhập
+    .clear
+
+    form#reg_acc_form.madeit_form(action='/users', method='post')
+        h3.pink_color.margin_bottom_10.margin_top_20 Thông tin tài khoản
+        label.float_left Tên đăng nhập (*)
+        input.float_left.textbox.tooltipHint(type='text', title='Tên đăng nhập', name='username')
+        .clear.height5
+        label.float_left Mật khẩu (*)
+        input.float_left.textbox.tooltipHint(type='password', title='Mật khẩu', name='password')
+        .clear.height5
+        label.float_left Xác nhận mật khẩu (*)
+        input.float_left.textbox.tooltipHint(type='password', title='Xác nhận mật khẩu', name='comfirm_password')
+        .clear.height5
+        label.float_left Email (*)
+        input.float_left.textbox.tooltipHint(type='text', title='Email của bạn đang sử dụng', name='email')
+        .clear.height5
+        h3.pink_color.margin_bottom_10.margin_top_10 Thông tin cá nhân
+        label.float_left Họ và tên lót (*)
+        input.float_left.textbox.tooltipHint(type='text', title='Họ và tên lót', name='firstname')
+        label.float_left Tên (*)
+        input.float_left.textbox.tooltipHint(type='text', title='Tên', name='lastname')
+        .clear.height10.margin_top_10
+        label.float_left(style='padding-top: 0;') Giới tính (*)
+        input.float_left(type='radio', name='sex', value='male',checked )
+        span.block.float_left(style='padding-top: 3px;') Nam
+        .clear.height5
+        label.float_left
+        input.float_left(type='radio', name='sex', value ='famale')
+        span.block.float_left(style='padding-top: 3px;') Nữ
+        .clear.height5
+        label.float_left
+        input.float_left(type='radio', name='sex', value = 'no')
+        span.block.float_left(style='padding-top: 3px;') Không đề cập
+        .clear.height5
+        label.float_left Quốc tịch
+        .comboBox.float_left
+            span Việt Nam
+            select.tooltipHint(title='Nước của bạn đang sống', name='country')
+                option(selected) Việt Nam
+                option Mỹ
+        .clear.height5
+        label.float_left Ngày sinh
+        .comboBoxSmall.float_left
+            span 1
+            select.tooltipHint(title='Ngày sinh', name='day')
+                option(selected) 1
+        .comboBoxMid.float_left.margin_left_10
+            span Tháng 1
+            select.tooltipHint(title='Tháng', name='month')
+                option(selected) Tháng 1
+                option Tháng 2
+        .comboBoxSmall.float_left.margin_left_10
+            span 1987
+            select.tooltipHint(title='Năm', name='year')
+                option(selected) 1987
+        .clear.height5
+        label.float_left Địa chỉ
+        .comboBox.float_left
+            span Quận Bình Thạnh
+            select.tooltipHint(title='Bạn đang sinh sống ở quận nào ?', name='district')
+                option Quận 1
+                option Quận 2
+                option Quận 3
+                option Quận 4
+                option Quận 5
+                option Quận 6
+                option Quận 7
+                option Quận 9
+                option Quận 10
+                option Quận 12
+                option Quận Bình Thạnh
+                option Quận Gò Vấp
+        .comboBox.float_left.margin_left_10
+            span Thành phố
+            select.tooltipHint(title='Thành phố nào ?', name='city')
+                option Hồ Chí Minh
+                option Hà Nội
+        .clear.height5
+        label.float_left(style='padding-top: 0;') Ngôn ngữ
+        input.float_left(type='radio', name='lang')
+        span.block.float_left(style='padding-top: 3px;') Tiếng Việt
+        .clear.height5
+        label.float_left
+        input.float_left(type='radio', name='lang')
+        span.block.float_left(style='padding-top: 3px;') English
+        .clear.height5
+        label.float_left Ngành nghề
+        .comboBox.float_left
+            span Kiến trúc sư
+            select.tooltipHint(title='Ngành nghề của bạn', name='job')
+                option Kiến trúc sư
+                option Thiết kế web
+        .clear.height5
+        label.float_left
+        input.float_left.margin_right_10.margin_top_5(type='checkbox',name='newseletter')
+        span.block.float_left.margin_top_5 Tôi muốn đăng ký nhận bản tin qua email
+        .clear.height5
+        label.float_left
+        input.float_left.margin_right_10.margin_top_5(type='checkbox', name='faq')
+        span.block.float_left.margin_top_5
+            | Tôi chấp nhận
+            a.blue_color(href='') các điều khoản
+            | của madeit
+        .clear.height10
+        label.float_left
+        .fb-like-box(data-href='http://facebook.com/madeit.vn', data-width='292', data-show-faces='true', data-stream='false', data-header='true')
+        .clear.height5.margin_bottom_20
+        label.float_left
+        input.float_left.blue_btn.form_btn.tooltipHint(style='margin-right: 10px;', type='submit', title='Nội dung tooltip cho nút đăng ký', value='Đăng Ký')
+        button.float_left.green_btn.form_btn.tooltipHint(type='button', title='Nội dung tooltip cho nút hủy bỏ') Hủy bỏ
+        .clear.height5

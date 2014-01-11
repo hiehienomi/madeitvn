@@ -1,0 +1,31 @@
+extends ../layout/frontend
+block layout_left
+  include ../include/index_left
+block content
+    .top_banner(style='padding: 0;')
+    .big_title Đăng Nhập
+    ul#reg_login_tab.idTabs.margin_top_10.reviewTab
+      li.float_left.margin_right_10
+        a.border_radius_5(href='/users/new') Đăng ký
+      li.float_left.margin_right_10
+        a.border_radius_5.selected(href='/users/login') Đăng nhập
+    .clear
+
+    form#login_acc_form.madeit_form(method='post', action='/users/login')
+        .clear.margin_top_20
+        label.float_left Tên đăng nhập / Email
+        input.float_left.textbox.tooltipHint(type='text', name='username', title='')
+        .clear.height5
+        label.float_left Mật khẩu
+        input.float_left.textbox.tooltipHint(type='password', name='password', title='')
+        .clear.height5
+        label.float_left
+        input.margin_right_10.float_left.tooltipHint(type='checkbox', name='remember', title='Không cần đăng nhập lần sau')
+        span.float_left.block(style='margin-top: 3px;') Ghi nhớ
+        .clear.height5
+        label.float_left
+        a.float_left.block.link(style='margin-top: 3px;', href='#') Quên mật khẩu?
+        .clear.height5.margin_bottom_10
+        label.float_left
+        input.float_left.blue_btn.form_btn(type='submit', style='margin-right: 10px;', value='Đăng nhập')
+        .clear.height5

@@ -1,0 +1,148 @@
+doctype html
+html
+    head
+        title Made It
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        include ../include/frontend_css
+    body
+        #wrapper.container_24
+            .grid_24
+                ul.float_left.top_menu.top_left_menu.li_float_left
+                    li
+                        a(href='/') giới thiệu
+                    li
+                        a(href='/') mua
+                    li
+                        a(href='/') bán
+                    li
+                        a(href='/') gian hàng
+                    li
+                        a(href='/') blog
+                    li
+                        a(href='/') khuyến mãi
+                    li
+                        a(href='/') sự kiện
+                ul.li_float_left.float_left(style='margin-top: 4px;')
+                    li.margin_right_10
+                        a(href='/')
+                            img(src='/images/vn.gif', width='30', height='20')
+                    li
+                        a(href='/')
+                            img(src='/images/en.jpg', width='30', height='20')
+                ul.float_right.top_menu.top_right_menu.li_float_left
+                    li
+                        a.link(href='/register_acc.html#reg_acc_form', onclick='triggerTabClick( "reg_acc_form" )') đăng ký
+                    li
+                        a.link(href='/register_acc.html#login_acc_form', onclick='triggerTabClick( "login_acc_form" )') đăng nhập
+                .clear
+                .content
+                    a#logo(href='/')
+                        img(src='/images/logo.png', width='180', height='110', alt='Logo Made It')
+                    .container
+                        .grid_6.alpha
+                            .grid_2.prefix_2.suffix_2
+                                a.grid_1.alpha.social_icon.email_ico(href='/') Email
+                                a.grid_1.omega.social_icon.rss_ico(href='/') RSS
+                                .height5.clear
+                                a.grid_1.alpha.social_icon.tw_ico(href='/') Twitter
+                                a.grid_1.omega.social_icon.fb_ico(href='/') Facebook
+                                .clear
+                            .clear
+                            block layout_left
+                        .grid_18.omega
+                            #main
+                                .blue_bg
+                                    .blue_bg_tool
+                                        form.float_left(action='', method='post')
+                                            input#searchTxt.grid_8.alpha(style='margin-right: 8px;', type='text', value='bất kỳ từ khóa nào', onclick='this.value=""', onblur='if(this.value == "") this.value = "bất kỳ từ khóa nào";')
+                                            .comboBox.grid_5(style='margin-right: 8px;')
+                                                span sản phẩm tái chế
+                                                select(name='cate')
+                                                    option sản phẩm tái chế
+                                                    option thiệp - quà tặng
+                                                    option nguyên vật liệu
+                                            button#searchBtn tìm kiếm
+                                        a.cartBtn.float_right(href='/#')
+                                            span 12
+                                        .minicart
+                                            .minicart_product
+                                                a.minicart_del_btn(href='/')
+                                                    img(src='/images/del_item.png', width='11', height='11')
+                                                .float_left.minicart_product_img
+                                                    a(href='/')
+                                                        img(src='/images/new_sp1.jpg', width='82', height='62')
+                                                .float_left.minicart_product_info
+                                                    a.pink_color.minicart_product_name(href='/') Cốc nhựa gai
+                                                    p.minicart_product_price 33 000 đ
+                                                .clear
+                                            .minicart_product
+                                                a.minicart_del_btn(href='/')
+                                                    img(src='/images/del_item.png', width='11', height='11')
+                                                .float_left.minicart_product_img
+                                                    a(href='/')
+                                                        img(src='/images/new_sp1.jpg', width='82', height='62')
+                                                .float_left.minicart_product_info
+                                                    a.pink_color.minicart_product_name(href='/') Cốc nhựa gai
+                                                    p.minicart_product_price 33 000 đ
+                                                .clear
+                                            .minicart_summary
+                                                p
+                                                    b Thành tiền:
+                                                    | 1,000,000 đ
+                                                p
+                                                    b Tổng cộng:
+                                                    | 1,000,000 đ
+                                            ul.minicart_menu
+                                                li
+                                                    a(href='/')
+                                                        b.pink_color Thanh toán
+                                                li |
+                                                li
+                                                    a(href='/')
+                                                        b.blue_color Xem giỏ hàng
+                                        // use this code when your cart is empty
+                                        // <a href="" class="cartEmptyBtn float_left"></a>
+                                        .clear
+                                block content
+                        .clear
+                        div(style='padding: 0 10px 10px 40px; margin-bottom: 10px; border-bottom: 2px solid #ccc;')
+                            p.float_left(style='padding-top: 135px;') copyright © 2012 Made it. all right reserved
+                            .bottom_deco
+                                img(src='/images/bottom_decor.png')
+                            .clear
+                        // <div class="float_left" style="padding: 10px 0 0 40px;"><a href="http://silentsword.net" target="_blank">Interactive design by Silent Sword</a></div>
+                        ul.float_right.foot_menu.li_float_left
+                            li
+                                a(href='/') liên hệ
+                            li
+                                a(href='/') điều khoản
+                            li
+                                a(href='/') câu hỏi thường gặp
+                            li
+                                a(href='/') quảng cáo
+                        .clear
+        #bottombg
+        #fb-root
+
+        .madeit_overlay
+        .madeit_lightbox
+            .madeit_lightbox_big_title
+                | ĐĂNG KÝ THÀNH CÔNG
+                a.madeit_lightbox_close.float_right(href='/#')
+                    span.madeit_lightbox_close_label đóng
+                    span.madeit_lightbox_close_btn  
+                    .clear
+                .clear
+            .container_24(style='width: 550px; margin-top: 20px;')
+                .list_event
+                    .grid_14.alpha.omega(style='padding-right: 10px; width: 340px; min-height: 200px; max-height: 350px; overflow: auto;')
+                        p Chào mừng "username" đến với madeit!
+                        p
+                            | Bạn vui lòng kiểm tra email để kích hoạt tài khoản và thỏa thích mua sắm những sản phẩm sáng tạo tại madeit nhé!
+                        p
+                            | Nếu có câu hỏi cần giải đáp, xin vui lòng liên hệ với chúng tôi qua hộp thư info@madeit.vn
+                        p
+                            | Trân trọng,
+                            br
+                            | Đội ngũ Madeit
+                    .clear
